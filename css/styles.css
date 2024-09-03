@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.date-picker {
+  position: relative;
+  display: inline-block;
+}
+
+#date-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.calendar {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.calendar th {
+  background-color: #f2f2f2;
+}
+
+.calendar td:hover {
+  background-color: #f2f2f2;
+}
+
+.calendar .month-year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar .month-year select {
+  margin: 0 5px;
+}
